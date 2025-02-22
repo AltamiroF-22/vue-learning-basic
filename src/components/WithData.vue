@@ -13,7 +13,7 @@ window.alert(`product name:${name} & product code: ${code}`)
 }
 </script>
 <template>
-    <div>
+    <div class="component">
         <h1>Product list</h1>
         <div class="productCard" @click="alertProduct(product.name, product.code)"
          v-for="product in products":key="product.id">
@@ -24,14 +24,6 @@ window.alert(`product name:${name} & product code: ${code}`)
 </template>
 
 <style scoped>
-    div{
-        text-align: center;
-        border:  1px solid #e9e9e9;
-        background-color: #050d04;
-        border-radius: 1em;
-        margin: 25px;
-        padding: 1em;
-    }
 
     .productCard{
         background-color: #222;
