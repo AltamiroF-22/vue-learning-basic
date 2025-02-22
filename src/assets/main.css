@@ -1,0 +1,20 @@
+body{
+  background-color: #333;
+  color: aliceblue;
+  margin: 0;
+
+}
+
+#app {
+  max-width: 1280px;  margin: 0 auto;
+  font-weight: normal;
+}
+
+header{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+  background-color: #442772;
+  text-align: center;
+  
+}
