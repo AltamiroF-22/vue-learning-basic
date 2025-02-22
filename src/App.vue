@@ -5,6 +5,7 @@ import WithPrimitiveReactiveData from './components/WithPrimitiveReactiveData.vu
 import WithNonPrimitiveReactiveData from './components/WithNon-PrimitiveReactiveData.vue';
 import DataBiding from './components/DataBiding.vue';
 import WithProps from './components/WithProps.vue';
+import ListenEvent from './components/ListenEvent.vue';
 
 import { products } from './components/WithData.vue';
 </script>
@@ -14,9 +15,12 @@ import { products } from './components/WithData.vue';
     Vue
   </header>
 
+  <ListenEvent/>
+
+
  <div class="with-props">
   <div v-for="product in products" :key="product.id">
-    <WithProps :item="product.name" :price="price=product.price"/>
+    <WithProps :item="product.name" :price="product.price"/>
   </div>
  </div>
 
@@ -27,7 +31,3 @@ import { products } from './components/WithData.vue';
   <FirstComponent/>
 
 </template>
-
-<style scoped>
-
-</style>
