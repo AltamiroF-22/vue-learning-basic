@@ -10,6 +10,7 @@
     <div class="component">
         <h1>Component with  list redering</h1>
         <p>Name: {{ name }}</p>
+        <p v-show="dogs.length === 0">Does not have dogs</p>
         <ul>
             <li v-for="dog in dogs" :key="dog.id">
                 Name: {{ dog.name }} | Age: {{ dog.age }}
