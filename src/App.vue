@@ -7,6 +7,7 @@ import DataBiding from './components/DataBiding.vue';
 import WithProps from './components/WithProps.vue';
 import ListenEvent from './components/ListenEvent.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
+import AssitedComputedProperties from './components/AssitedComputedProperties.vue';
 
 import { products } from './components/WithData.vue';
 </script>
@@ -16,6 +17,7 @@ import { products } from './components/WithData.vue';
     Vue
   </header>
 
+  <AssitedComputedProperties/>
   <ComputedProperties/>
   <ListenEvent/>
 
