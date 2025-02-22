@@ -9,6 +9,7 @@ import ListenEvent from './components/ListenEvent.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
 import AssitedComputedProperties from './components/AssitedComputedProperties.vue';
 import CondicionalRedering from './components/CondicionalRedering.vue';
+import ListRederization from './components/ListRederization.vue';
 
 import { products } from './components/WithData.vue';
 </script>
@@ -17,6 +18,12 @@ import { products } from './components/WithData.vue';
   <header>
     Vue
   </header>
+  <ListRederization name="Junior" 
+  :dogs="[
+    {name: 'dog1', id: '1212', age: 7},
+    {name: 'dog2', id: '12', age: 3}
+    ]"/>
+
   <CondicionalRedering name="junior" :dogsQuantity="5"/>
   <AssitedComputedProperties/>
   <ComputedProperties/>
