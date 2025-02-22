@@ -1,13 +1,19 @@
-<script setup>
-
-const products = [
-  { id: 1, name: "Notebook", code: "#562736" },
-  { id: 2, name: "Smartphone", code: "#893452" },
-  { id: 3, name: "Tablet", code: "#324567" },
-  { id: 4, name: "Smartwatch", code: "#981234" },
-  { id: 5, name: "Headphone", code: "#564738" }
+<script>
+    export const products = [
+      { id: 1, name: "Notebook", code: "#562736", price: 3500 },
+      { id: 2, name: "Smartphone", code: "#893452", price: 2500 },
+      { id: 3, name: "Tablet", code: "#324567", price: 1800 },
+      { id: 4, name: "Smartwatch", code: "#981234", price: 1200 },
+      { id: 5, name: "Headphone", code: "#564738", price: 600 }
 ];
 
+const alertProduct = (name, code) => {
+  window.alert(`Product name: ${name} & Product code: ${code}`);
+};
+</script>
+
+
+<script setup>
 const alertProduct = (name, code) => {
 window.alert(`product name:${name} & product code: ${code}`)
 }

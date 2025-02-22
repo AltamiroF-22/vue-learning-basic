@@ -49,4 +49,31 @@ header{
   outline: none;  
   }
 
+  .with-props {
+    max-width: 100vw;
+    overflow-x: scroll;
+    display: flex;
   
+    /* Garante que a barra fique visível no Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: #4CAF50 #1e1e1e;
+  }
+  
+  /* Para navegadores baseados no WebKit (Chrome, Edge, Safari) */
+  .with-props::-webkit-scrollbar {
+    height: 8px; /* Define a altura da barra horizontal */
+  }
+  
+  .with-props::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Cor de fundo da trilha */
+    border-radius: 10px;
+  }
+  
+  .with-props::-webkit-scrollbar-thumb {
+    background: #4CAF50; /* Cor da barra */
+    border-radius: 10px;
+  }
+  
+  .with-props::-webkit-scrollbar-thumb:hover {
+    background: #45a049; /* Cor ao passar o mouse */
+  }
